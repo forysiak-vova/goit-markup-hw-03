@@ -1,0 +1,192 @@
+:root {
+  --primary-tex-color: #757575;
+  --title-tex-color: #212121;
+  --accent-color: #2196f3;
+  --white-text-color: #ffffff;
+  --background-color: #2f303a;
+}
+
+body {
+  color: var(--primary-tex-color);
+  background-color: #ffffff;
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+/* =======код відключання======= */
+.list {
+  list-style: none;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+/* =======Логотип======= */
+
+.nav__logo_span {
+  font-family: Raleway, sans-serif;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
+  color: var(--accent-color);
+}
+.nav__logo {
+  font-family: Raleway, sans-serif;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
+  color: #000000;
+  text-decoration: none;
+}
+/* =======розмітка Хедера======= */
+.link {
+  color: var(--title-tex-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+
+.link:hover,
+.link:focus {
+  color: var(--accent-color);
+}
+.nav__link-activ {
+  color: var(--accent-color);
+}
+.contact__link {
+  color: var(--primary-tex-color);
+}
+/* =======розмітка героя======= */
+
+.hero {
+  background-color: var(--background-color);
+}
+.hero__title {
+  color: var(--white-text-color);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+.hero__button {
+  background-color: var(--accent-color);
+  color: var(--white-text-color);
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.87;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+}
+.hero__button:hover,
+.hero__button:focus {
+  background-color: #188ce8;
+}
+
+/* =====Розмітка Features===== */
+
+.title {
+  color: var(--title-tex-color);
+}
+.features__title {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+/* =======Робота======= */
+.work__title {
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 1.16;
+}
+/* =======Розмітка наша команда======== */
+.our-team {
+  background-color: #f5f4fa;
+}
+.our-team__title {
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 1.16;
+}
+.our-team-name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+}
+.our-team__about {
+  font-size: 16px;
+  line-height: 1.19;
+}
+/* =====Розмітка Футера===== */
+
+.address__footer {
+  font-style: normal;
+}
+.footer__link {
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+.address__about {
+  color: var(--white-text-color);
+}
+.footer {
+  background-color: var(--background-color);
+}
+.footer__logo {
+  color: var(--white-text-color);
+}
+/* =======кнопки портфоліо======= */
+.portfolio__button {
+  background-color: #f5f4fa;
+  color: var(--title-tex-color);
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  padding: 6px 22px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+}
+.portfolio__button:hover,
+.portfolio__button:focus {
+  background-color: var(--accent-color);
+  color: var(--white-text-color);
+}
+.gallery__title {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+.gallery__about {
+  font-size: 16px;
+  line-height: 1.87;
+}

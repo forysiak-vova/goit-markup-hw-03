@@ -72,6 +72,11 @@ img {
 }
 
 /* =======розмітка Хедера======= */
+.{
+  display: grid;
+  grid-template-columns: repeat(3, 370px);
+  gap: 30px;
+}
 
 .link {
   color: var(--title-tex-color);
@@ -166,6 +171,9 @@ img {
 }
 .features__list {
   margin: 0;
+  display: grid;
+  grid-template-columns: repeat(4, 270px);
+  gap: 30px;
 }
 .features__about {
   margin: 0;
@@ -184,6 +192,9 @@ img {
 }
 .work__list {
   margin: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 370px);
+  gap: 30px;
 }
 
 /* =======Розмітка наша команда======== */
@@ -199,6 +210,9 @@ img {
 }
 .our-team__list {
   margin: 0;
+    display: grid;
+    grid-template-columns: repeat(4, 270px);
+    gap: 30px;
 }
 .our-team-name {
   font-weight: 500;

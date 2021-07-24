@@ -37,6 +37,22 @@ body {
   overflow: hidden;
 }
 
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+img {
+  display: block;
+}
+
 /* =======Логотип======= */
 
 .nav__logo_span {
@@ -95,6 +111,7 @@ body {
 .hero {
   background-color: var(--background-color);
   height: 600px;
+  padding-top: 200px;
 }
 .hero__title {
   max-width: 690px;
@@ -262,4 +279,3 @@ body {
   display: grid;
   grid-template-columns: repeat(3, 370px);
   gap: 30px;
-  justify-self: center;

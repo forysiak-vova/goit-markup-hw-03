@@ -19,6 +19,7 @@ body {
 }
 
 /* =======код відключання======= */
+
 .list {
   list-style: none;
 }
@@ -35,6 +36,7 @@ body {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
 /* =======Логотип======= */
 
 .nav__logo_span {
@@ -52,7 +54,9 @@ body {
   color: #000000;
   text-decoration: none;
 }
+
 /* =======розмітка Хедера======= */
+
 .link {
   color: var(--title-tex-color);
   font-weight: 500;
@@ -72,12 +76,30 @@ body {
 .contact__link {
   color: var(--primary-tex-color);
 }
+.heder__contact {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.container {
+  background-color: aqua;
+  width: 1200px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.page__header {
+  background-color: green;
+}
 /* =======розмітка героя======= */
 
 .hero {
   background-color: var(--background-color);
+  height: 600px;
 }
 .hero__title {
+  max-width: 690px;
+  display: block;
+  margin: 0 auto;
   color: var(--white-text-color);
   font-weight: 900;
   font-size: 44px;
@@ -87,6 +109,15 @@ body {
   text-transform: uppercase;
 }
 .hero__button {
+  display: block;
+  margin: 0 auto;
+  /* display: flex; */
+  align-items: center;
+  text-align: center;
+  border-radius: 4px;
+  border: none;
+  padding: 10px 32px;
+  min-width: 200px;
   background-color: var(--accent-color);
   color: var(--white-text-color);
   font-family: Roboto, sans-serif;
@@ -94,9 +125,6 @@ body {
   font-weight: var(--font-weight-title);
   font-size: 16px;
   line-height: 1.87;
-  display: flex;
-  align-items: center;
-  text-align: center;
   letter-spacing: 0.06em;
 }
 .hero__button:hover,
@@ -109,36 +137,64 @@ body {
 .title {
   color: var(--title-tex-color);
 }
+.features {
+  padding-top: 94px;
+  background-color: green;
+}
 .features__title {
   font-weight: var(--font-weight-title);
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
 }
+.features__list {
+  margin: 0;
+}
+.features__about {
+  margin: 0;
+}
+
 /* =======Робота======= */
+
+.work {
+  padding-top: 94px;
+  background-color: green;
+}
 .work__title {
   font-weight: var(--font-weight-title);
   font-size: 32px;
   line-height: 1.16;
 }
+.work__list {
+  margin: 0;
+}
+
 /* =======Розмітка наша команда======== */
+
 .our-team {
   background-color: #f5f4fa;
+  padding-top: 94px;
 }
 .our-team__title {
   font-weight: var(--font-weight-title);
   font-size: 32px;
   line-height: 1.16;
 }
+.our-team__list {
+  margin: 0;
+}
 .our-team-name {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
 }
+
 .our-team__about {
   font-size: 16px;
   line-height: 1.19;
+  margin: 0;
 }
+
 /* =====Розмітка Футера===== */
 
 .address__footer {
@@ -160,15 +216,26 @@ body {
 .footer__logo {
   color: var(--white-text-color);
 }
+.footer__list {
+  margin-bottom: 0;
+}
+
 /* =======кнопки портфоліо======= */
+
+.portfolio {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  background-color: green;
+}
 .portfolio__button {
-  background-color: #f5f4fa;
-  color: var(--title-tex-color);
   border-radius: 4px;
   border: none;
   cursor: pointer;
   padding: 6px 22px;
+  text-align: center;
 
+  background-color: #f5f4fa;
+  color: var(--title-tex-color);
   font-family: Roboto;
   font-style: normal;
   font-weight: 500;
@@ -191,3 +258,8 @@ body {
   font-size: 16px;
   line-height: 1.87;
 }
+.gallery__list {
+  display: grid;
+  grid-template-columns: repeat(3, 370px);
+  gap: 30px;
+  justify-self: center;

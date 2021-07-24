@@ -72,11 +72,6 @@ img {
 }
 
 /* =======розмітка Хедера======= */
-.{
-  display: grid;
-  grid-template-columns: repeat(3, 370px);
-  gap: 30px;
-}
 
 .link {
   color: var(--title-tex-color);
@@ -102,7 +97,7 @@ img {
   margin-bottom: 0;
 }
 .container {
-  background-color: aqua;
+  /* background-color: aqua; */
   width: 1200px;
   margin: 0 auto;
   padding-left: 15px;
@@ -121,7 +116,8 @@ img {
 .hero__title {
   max-width: 690px;
   display: block;
-  margin: 0 auto;
+  margin: 0 auto 30px;
+
   color: var(--white-text-color);
   font-weight: 900;
   font-size: 44px;

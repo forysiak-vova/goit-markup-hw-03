@@ -225,10 +225,6 @@ img {
   grid-template-columns: repeat(3, 370px);
   gap: 30px;
 }
-.our-worker {
-  padding: 30px 0;
-  text-align: center;
-}
 
 /* =======Розмітка наша команда======== */
 
@@ -255,12 +251,18 @@ img {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
+  margin-bottom: 10px;
 }
 
 .our-team__about {
   font-size: 16px;
   line-height: 1.19;
   margin: 0;
+}
+.our-worker {
+  padding: 30px 0;
+  text-align: center;
+  background-color: white;
 }
 
 /* =====Розмітка Футера===== */
@@ -279,6 +281,7 @@ img {
 }
 .address__about {
   color: var(--white-text-color);
+  margin-bottom: 9px;
 }
 .footer {
   background-color: var(--background-color);
@@ -340,14 +343,17 @@ img {
   gap: 30px;
 }
 .description {
-  border-right: 1px solid #2a2a2a;
-  border-bottom: 1px solid #2a2a2a;
-  border-left: 1px solid #2a2a2a;
-  padding: 20px 0;
+  border-right: 1px solid #f5f4fa;
+  border-bottom: 1px solid #f5f4fa;
+  border-left: 1px solid #f5f4fa;
+  padding: 20px 24px;
 }
 .portfolio__item {
   margin-right: 8px;
 }
-.portfolio__item: :last-child {
+.portfolio__item :last-child {
   margin-right: 8px;
+}
+.footer-contact__item {
+  margin-bottom: 8px;
 }

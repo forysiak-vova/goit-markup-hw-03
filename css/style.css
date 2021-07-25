@@ -108,6 +108,7 @@ img {
 .navi {
   display: flex;
   justify-content: space-between;
+  align-items: baseline;
 }
 .nav__list {
   display: flex;
@@ -211,6 +212,7 @@ img {
   /* background-color: green; */
 }
 .work__title {
+  text-align: center;
   padding-bottom: 50px;
 
   font-weight: var(--font-weight-title);
@@ -223,6 +225,10 @@ img {
   grid-template-columns: repeat(3, 370px);
   gap: 30px;
 }
+.our-worker {
+  padding: 30px 0;
+  text-align: center;
+}
 
 /* =======Розмітка наша команда======== */
 
@@ -234,6 +240,7 @@ img {
 }
 .our-team__title {
   padding: 50px;
+  text-align: center;
   font-weight: var(--font-weight-title);
   font-size: 32px;
   line-height: 1.16;
@@ -333,8 +340,14 @@ img {
   gap: 30px;
 }
 .description {
-  border-right: 1px solid #f5f4fa;
-  border-bottom: 1px solid #f5f4fa;
-  border-left: 1px solid #f5f4fa;
+  border-right: 1px solid #2a2a2a;
+  border-bottom: 1px solid #2a2a2a;
+  border-left: 1px solid #2a2a2a;
   padding: 20px 0;
+}
+.portfolio__item {
+  margin-right: 8px;
+}
+.portfolio__item: :last-child {
+  margin-right: 8px;
 }

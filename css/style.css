@@ -112,8 +112,14 @@ img {
 .nav__list {
   display: flex;
 }
-.nav__list li {
-  margin: 0 50px;
+.nav__item {
+  margin-right: 50px;
+}
+.nav__item:last-child {
+  margin-right: 0;
+}
+.contact__item:first-child {
+  margin-right: 50px;
 }
 .container {
   /* background-color: aqua; */
@@ -194,6 +200,7 @@ img {
 }
 .features__about {
   margin: 0;
+  padding-top: 10px;
 }
 
 /* =======Робота======= */
@@ -226,8 +233,7 @@ img {
   background-color: #f5f4fa;
 }
 .our-team__title {
-  padding-bottom: 50px;
-
+  padding: 50px;
   font-weight: var(--font-weight-title);
   font-size: 32px;
   line-height: 1.16;
@@ -237,10 +243,6 @@ img {
   display: grid;
   grid-template-columns: repeat(4, 270px);
   gap: 30px;
-}
-.our-team__item {
-  border: 1px solid #f5f4fa;
-  background-color: white;
 }
 .our-team-name {
   font-weight: 500;
@@ -258,6 +260,8 @@ img {
 
 .address__footer {
   font-style: normal;
+  padding-top: 20px;
+  padding-bottom: 60px;
 }
 .footer__link {
   color: rgba(255, 255, 255, 0.6);
@@ -271,6 +275,7 @@ img {
 }
 .footer {
   background-color: var(--background-color);
+  padding-top: 60px;
 }
 .footer__logo {
   color: var(--white-text-color);
@@ -331,4 +336,5 @@ img {
   border-right: 1px solid #f5f4fa;
   border-bottom: 1px solid #f5f4fa;
   border-left: 1px solid #f5f4fa;
+  padding: 20px 0;
 }

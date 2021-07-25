@@ -69,6 +69,7 @@ img {
   line-height: 1.19;
   color: #000000;
   text-decoration: none;
+  margin: 0 93px 0 0;
 }
 
 /* =======розмітка Хедера======= */
@@ -95,6 +96,24 @@ img {
 .heder__contact {
   margin-top: 0;
   margin-bottom: 0;
+  display: flex;
+  align-items: center;
+}
+
+.navigation {
+  display: flex;
+  height: 80px;
+  align-items: center;
+}
+.navi {
+  display: flex;
+  justify-content: space-between;
+}
+.nav__list {
+  display: flex;
+}
+.nav__list li {
+  margin: 0 50px;
 }
 .container {
   /* background-color: aqua; */
@@ -104,8 +123,10 @@ img {
   padding-right: 15px;
 }
 .page__header {
-  background-color: green;
+  /* background-color: green; */
+  border-bottom: 1px solid #f5f4fa;
 }
+
 /* =======розмітка героя======= */
 
 .hero {
@@ -157,7 +178,7 @@ img {
 }
 .features {
   padding-top: 94px;
-  background-color: green;
+  /* background-color: green; */
 }
 .features__title {
   font-weight: var(--font-weight-title);
@@ -179,9 +200,12 @@ img {
 
 .work {
   padding-top: 94px;
-  background-color: green;
+  padding-bottom: 94px;
+  /* background-color: green; */
 }
 .work__title {
+  padding-bottom: 50px;
+
   font-weight: var(--font-weight-title);
   font-size: 32px;
   line-height: 1.16;
@@ -196,19 +220,27 @@ img {
 /* =======Розмітка наша команда======== */
 
 .our-team {
-  background-color: #f5f4fa;
   padding-top: 94px;
+  padding-bottom: 94px;
+
+  background-color: #f5f4fa;
 }
 .our-team__title {
+  padding-bottom: 50px;
+
   font-weight: var(--font-weight-title);
   font-size: 32px;
   line-height: 1.16;
 }
 .our-team__list {
   margin: 0;
-    display: grid;
-    grid-template-columns: repeat(4, 270px);
-    gap: 30px;
+  display: grid;
+  grid-template-columns: repeat(4, 270px);
+  gap: 30px;
+}
+.our-team__item {
+  border: 1px solid #f5f4fa;
+  background-color: white;
 }
 .our-team-name {
   font-weight: 500;
@@ -252,7 +284,7 @@ img {
 .portfolio {
   padding-top: 94px;
   padding-bottom: 94px;
-  background-color: green;
+  /* background-color: green; */
 }
 .portfolio__button {
   border-radius: 4px;
@@ -275,6 +307,11 @@ img {
   background-color: var(--accent-color);
   color: var(--white-text-color);
 }
+.portfolio__list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 34px;
+}
 .gallery__title {
   font-weight: var(--font-weight-title);
   font-size: 18px;
@@ -289,3 +326,9 @@ img {
   display: grid;
   grid-template-columns: repeat(3, 370px);
   gap: 30px;
+}
+.description {
+  border-right: 1px solid #f5f4fa;
+  border-bottom: 1px solid #f5f4fa;
+  border-left: 1px solid #f5f4fa;
+}

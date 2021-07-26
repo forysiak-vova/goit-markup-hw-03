@@ -69,7 +69,6 @@ img {
   line-height: 1.19;
   color: #000000;
   text-decoration: none;
-  margin: 0 93px 0 0;
 }
 
 /* =======розмітка Хедера======= */
@@ -96,22 +95,23 @@ img {
 .heder__contact {
   margin-top: 0;
   margin-bottom: 0;
+  margin-left: auto;
   display: flex;
   align-items: center;
 }
 
 .navigation {
   display: flex;
-  height: 80px;
   align-items: center;
 }
 .navi {
   display: flex;
-  justify-content: space-between;
-  align-items: baseline;
+  /* justify-content: space-between; */
+  align-items: center;
 }
 .nav__list {
   display: flex;
+  margin-left: 93px;
 }
 .nav__item {
   margin-right: 50px;
@@ -132,14 +132,16 @@ img {
 .page__header {
   /* background-color: green; */
   border-bottom: 1px solid #f5f4fa;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 /* =======розмітка героя======= */
 
 .hero {
   background-color: var(--background-color);
-  height: 600px;
   padding-top: 200px;
+  padding-bottom: 200px;
 }
 .hero__title {
   max-width: 690px;
@@ -213,7 +215,7 @@ img {
 }
 .work__title {
   text-align: center;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 
   font-weight: var(--font-weight-title);
   font-size: 32px;
@@ -235,7 +237,7 @@ img {
   background-color: #f5f4fa;
 }
 .our-team__title {
-  padding: 50px;
+  margin-bottom: 50px;
   text-align: center;
   font-weight: var(--font-weight-title);
   font-size: 32px;
@@ -269,8 +271,8 @@ img {
 
 .address__footer {
   font-style: normal;
-  padding-top: 20px;
-  padding-bottom: 60px;
+  /* padding-top: 20px; */
+  margin-top: 20px;
 }
 .footer__link {
   color: rgba(255, 255, 255, 0.6);
@@ -286,12 +288,19 @@ img {
 .footer {
   background-color: var(--background-color);
   padding-top: 60px;
+  padding-bottom: 60px;
 }
 .footer__logo {
   color: var(--white-text-color);
 }
 .footer__list {
   margin-bottom: 0;
+}
+.footer-contact__item {
+  margin-bottom: 8px;
+}
+.footer-contact__item:last-child {
+  margin-bottom: 0px;
 }
 
 /* =======кнопки портфоліо======= */
@@ -325,13 +334,14 @@ img {
 .portfolio__list {
   display: flex;
   justify-content: center;
-  margin-bottom: 34px;
+  margin-bottom: 50px;
 }
 .gallery__title {
   font-weight: var(--font-weight-title);
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+  margin-bottom: 4px;
 }
 .gallery__about {
   font-size: 16px;
@@ -351,9 +361,7 @@ img {
 .portfolio__item {
   margin-right: 8px;
 }
-.portfolio__item :last-child {
+
+.portfolio__item:last-child {
   margin-right: 0px;
-}
-.footer-contact__item {
-  margin-bottom: 8px;
 }
